@@ -44,6 +44,7 @@ from .const import (
     CONF_CHAT_MODEL,
     CONF_MAX_TOKENS,
     CONF_PROMPT,
+    CONF_PROXY,
     CONF_REASONING_EFFORT,
     CONF_RECOMMENDED,
     CONF_TEMPERATURE,
@@ -74,6 +75,7 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
     {
         vol.Required(CONF_API_KEY): str,
         vol.Optional(CONF_BASE_URL): str,
+        vol.Optional(CONF_PROXY): str,
     }
 )
 
